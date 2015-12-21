@@ -31,7 +31,7 @@ module MasterMind
 		def feedback(current_guess)
 			@key_peg = Hash.new(0)
 			# puts guess.inspect
-			puts secret_code.inspect
+			# puts secret_code.inspect
 			rights = reds(current_guess)
 			almosts = whites(current_guess)
 			return "#{rights} red(s), #{almosts} white(s) "
